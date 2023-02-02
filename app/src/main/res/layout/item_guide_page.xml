@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_guide_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/tv_guide_page"
+        android:layout_width="match_parent"
+        android:layout_height="44.00dp"
+        android:layout_marginLeft="85.00dp"
+        android:layout_marginRight="85.00dp"
+        android:layout_marginBottom="80.00dp"
+        android:textColor="@color/black"
+        android:text="立刻体验"
+        android:textSize="16.00sp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/corner_red_22_bg"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:visibility="invisible"
+
+        />
+
+</RelativeLayout>
