@@ -24,17 +24,23 @@ public class GuideActivity extends BaseView<GuidePresenter, GuideContract.View> 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        SplashScreen.installSplashScreen(this);
-        setContentView(R.layout.activity_main);
-        initView();
-        initEvent();
+
+        setContentView(R.layout.activity_guide);
+//        initView();
+//        initEvent();
         presenter.init();
 
     }
 
     @Override
     public GuideContract.View getContract() {
-        return null;
+        return new GuideContract.View() {
+            @Override
+            public void goToNextPage(Class clazz) {
+                Intent intent = new Intent(GuideActivity.this,clazz);
+                GuideActivity.this.startActivity(intent);
+            }
+        };
     }
 
     @Override

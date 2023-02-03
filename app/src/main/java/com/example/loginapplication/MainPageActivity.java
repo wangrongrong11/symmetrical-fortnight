@@ -1,6 +1,7 @@
 package com.example.loginapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.splashscreen.SplashScreen;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -15,6 +16,7 @@ public class MainPageActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //SplashScreen.installSplashScreen(this);
         setContentView(R.layout.activity_main_page);
         LocalApplication.putBoolean("is_login_in", true);
         initView();

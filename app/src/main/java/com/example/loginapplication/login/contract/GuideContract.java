@@ -11,7 +11,7 @@ public interface GuideContract {
     }
 
     interface View{
-        void goToNextPage();
+        void goToNextPage(Class clazz);
 
     }
 }
