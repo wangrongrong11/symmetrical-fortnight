@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 
-public abstract class BaseView<P extends BasePresenter, CONTRACT> extends Activity {
+public abstract class BaseView<P extends BasePresenter, CONTRACT> extends AppCompatActivity {
     public P presenter;
 
     public BaseView(P p){

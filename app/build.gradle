@@ -60,4 +60,7 @@ dependencies {
     // Gson 服务器数据交互
     api 'com.google.code.gson:gson:2.8.6'
 
+    //indicator
+    implementation 'com.github.hackware1993:MagicIndicator:1.5.0'
+
 }

@@ -1,6 +1,5 @@
 package com.example.loginapplication.login.presenter;
 
-import android.app.Application;
 import android.content.Intent;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
@@ -9,7 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.application.LocalApplication;
-import com.example.loginapplication.MainPageActivity;
+import com.example.homepage.view.activity.HomeActivity;
 import com.example.base.BasePresenter;
 import com.example.loginapplication.login.bean.UserInfoBean;
 import com.example.loginapplication.login.activity.LoginActivity;
@@ -50,7 +49,7 @@ public class LoginPresenter extends BasePresenter<LoginModel, LoginActivity, Log
             public void responseLogin(UserInfoBean userInfoBean) {
                 Toast.makeText(getView(), "登录成功" , Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent();
-                intent.setClass(getView(), MainPageActivity.class);
+                intent.setClass(getView(), HomeActivity.class);
                 getView().startActivity(intent);
                 //此处的finish()可以避免返回的时候重新打开这个页面
                 getView().finish();

@@ -3,7 +3,6 @@ package com.example.loginapplication.login.presenter;
 import android.content.Intent;
 
 import com.example.base.BasePresenter;
-import com.example.loginapplication.MainPageActivity;
 import com.example.loginapplication.login.activity.IntroductoryActivity;
 import com.example.loginapplication.login.activity.LoginActivity;
 import com.example.loginapplication.login.adapter.IntroductoryPageAdapter;

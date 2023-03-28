@@ -29,7 +29,7 @@
             android:label="@string/title_activity_login"
             android:launchMode="singleTop" />
         <activity
-            android:name=".MainPageActivity"
+            android:name="com.example.homepage.view.activity.HomeActivity"
             android:exported="false">
 
             <meta-data

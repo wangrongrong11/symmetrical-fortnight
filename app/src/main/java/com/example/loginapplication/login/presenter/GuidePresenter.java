@@ -6,7 +6,7 @@ import android.util.Log;
 import com.example.application.LocalApplication;
 import com.example.base.BasePresenter;
 import com.example.loginapplication.GuideActivity;
-import com.example.loginapplication.MainPageActivity;
+import com.example.homepage.view.activity.HomeActivity;
 import com.example.loginapplication.login.activity.IntroductoryActivity;
 import com.example.loginapplication.login.activity.LoginActivity;
 import com.example.loginapplication.login.contract.GuideContract;
@@ -16,10 +16,8 @@ import java.util.concurrent.TimeUnit;
 
 import io.reactivex.Observable;
 import io.reactivex.Observer;
-import io.reactivex.Scheduler;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
-import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
 public class GuidePresenter extends BasePresenter<GuideModel, GuideActivity, GuideContract.Presenter> {
@@ -65,7 +63,7 @@ public class GuidePresenter extends BasePresenter<GuideModel, GuideActivity, Gui
                         if(!isLoginIn){
                             getView().getContract().goToNextPage(LoginActivity.class);
                         }else{
-                            getView().getContract().goToNextPage(MainPageActivity.class);
+                            getView().getContract().goToNextPage(HomeActivity.class);
                         }
                         getView().finish();
                     }
